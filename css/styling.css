@@ -487,8 +487,8 @@ a:focus {
 
 .sponsors {
   vertical-align: middle;
-  margin: 0 0em 3rem;
-  height: 13vh;
+  margin: 1rem 0em 1.5rem;
+  height: 10vh;
   width: 100%;
 }
 
@@ -808,8 +808,9 @@ a:focus {
   }
 
   .sponsors {
-    padding: 0 .3rem;
-    margin-bottom: 30vh;
+    padding: 0 .8rem;
+
+    margin-bottom: 43vh;
   }
 
   .mobileDiv {
@@ -822,11 +823,14 @@ a:focus {
   }
 
   .bulldog {
-    margin-top: .5rem;
+    margin-top: .8rem;
     width: auto;
+    width: 5.4em;
+    height: 5rem;
 
   }
 
+  
 
   .navbarbtn {
     display: none;
