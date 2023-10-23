@@ -474,14 +474,14 @@ a:focus {
   -----------------------------------------*/
 
 .hero {
-  background-image: url('../images/teamphoto.png');
+  background-image: url('../images/squadPic.jpeg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   vertical-align: middle;
   min-height: 100vh;
   position: relative;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
 
 }
 
@@ -508,8 +508,8 @@ a:focus {
   border-radius: 0 0 15px 15px;
   padding: 1rem 2rem;
   position: relative;
+  height: 14em;
 
-  height: 15em;
 }
 
 .Mailing-info-long {
@@ -518,7 +518,10 @@ a:focus {
   border-radius: 15px;
   padding: 1rem 2rem;
   position: relative;
+  height: 24em;
+
 }
+
 
 
 .Mailing-info strong {
@@ -695,7 +698,7 @@ a:focus {
   border-radius: 15px;
   padding: 1rem 2rem;
   position: relative;
-  height: 21em;
+  height: 25em;
 }
 
 
