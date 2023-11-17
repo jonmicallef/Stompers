@@ -467,7 +467,7 @@ a:focus {
   -----------------------------------------*/
 
 .hero {
-  background-image: url('../images/squadPic.jpeg');
+  background-image: url('../images/squadPic-min.jpeg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -798,6 +798,17 @@ a:focus {
   .tableDiv {
     display: none;
   }
+  .Mailing-info-long{
+    height: fit-content;
+  }
+  .Trophy-Mailing-info{
+    height: fit-content;
+  }
+  .Mailing-info-long:nth-child(1){
+
+  margin-bottom: 3em;
+  }
+
 
   .on {
     display: block;
@@ -888,4 +899,8 @@ a:focus {
   .contact h2 span {
     display: block;
   }
+}
+
+.errorbackground{
+  background-color: #E2223B !important;
 }
