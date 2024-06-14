@@ -380,6 +380,26 @@ a:focus {
      MENU             
   -----------------------------------------*/
 /* NAVBAR */
+.navss{
+  display: none;
+padding: 0 7px;
+width: 100%;
+ 
+}
+@media (max-width: 768px) {
+  .navss{
+display: block;
+
+  }}
+.display-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .display-toggle {
+      display: block;
+  }
+}
 .navbar {
   padding: 0.5em 1em;
   margin: 0;
@@ -398,6 +418,8 @@ a:focus {
   padding: 0;
   cursor: pointer;
   background: none;
+  margin-right: 1rem; /* Add margin to the right */
+  margin-top: 0.5rem; /* Adjust top margin */
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -430,19 +452,19 @@ a:focus {
 .navbar-collapse {
   flex-grow: 0;
 }
-.navbar-brand img {
-  height: 70px; /* Increased height for a bigger logo */
-  margin-right: 0.5rem;
-}
 
 .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
-  text-transform: uppercase; /* Make "Stompers" all caps */
-  letter-spacing: -0.02em; /* Adjust letter spacing */
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
+.navbar-brand img {
+  height: 60px; /* Adjusted height for the logo */
+  margin-right: 0.5rem;
+}
 
 .nav-item .nav-link {
   color: #ffffff;
@@ -462,8 +484,8 @@ a:focus {
   border-radius: 25px;
   color: #ffffff;
   font-weight: bold;
-  display: block;
   padding: 0.5rem 1.5rem;
+  text-align: center;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
@@ -478,23 +500,47 @@ a:focus {
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  .navbar-toggler {
-    align-self: flex-start;
-  }
 
   .navbar-collapse {
     width: 100%;
   }
 
-  .navbar-brand {
-    margin: 1rem 0;
+  .navbar-toggler {
+    align-self: flex-start;
   }
 
   .navbarbtn {
-    align-self: flex-end;
+    margin-top: 0.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-brand,
+  .navbar-collapse,
+  .navbarbtn.d-lg-block {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarbtn.d-lg-none {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* HERO */
 /* HERO */
 .hero {
   background-image: url('../images/squadPic-min.jpeg');
@@ -530,7 +576,7 @@ a:focus {
 .hero-box {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.701);
+  background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
@@ -579,10 +625,6 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
   .hero-box {
     padding: 1.5rem;
     max-width: 90%;
@@ -601,7 +643,24 @@ a:focus {
   }
 }
 
+@media (max-width: 576px) {
+  .hero-box {
+    padding: 1rem;
+  }
 
+  .hero-box h1 {
+    font-size: 1.25rem;
+  }
+
+  .hero-box p {
+    font-size: 0.8rem;
+  }
+
+  .hero-box button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
 
 
 /*---------------------------------------
@@ -658,6 +717,9 @@ a:focus {
 
 }
 
+.mobilebox{
+  border-radius: 6%;
+}
 
 /*---------------------------------------
      SCHEDULE             
@@ -769,17 +831,36 @@ a:focus {
 .class-thumb {
   /* background: rgba(255, 255, 255, 0.95); */
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  border-radius: 4%;
+  overflow: hidden;
+  /* margin-bottom: 1rem; Closer spacing between boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.class-thumb img {
+  height: fit-content;
+  
+  border-bottom: none; /* Removed the border line */
+}
+
+.class-thumb2 {
+  /* background: rgba(255, 255, 255, 0.95); */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
   border-radius: 15px;
   overflow: hidden;
   /* margin-bottom: 1rem; Closer spacing between boxes */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  width: 100%;
 
 }
 
-.class-thumb img {
+.class-thumb2 img {
   height: fit-content;
   
   border-bottom: none; /* Removed the border line */
@@ -813,6 +894,10 @@ a:focus {
   }
   
   .class-thumb {
+    margin-bottom: 1rem; /* Ensure closer spacing on small screens */
+  }
+
+  .class-thumb2 {
     margin-bottom: 1rem; /* Ensure closer spacing on small screens */
   }
 }
