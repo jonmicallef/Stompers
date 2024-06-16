@@ -381,8 +381,7 @@ font-weight: 500;}
 /*---------------------------------------
     FEATURE          
   -----------------------------------------*/
-
-  .feature {
+.feature {
     background: var(--dark-color);
     background-image: url(../images/smoke.png);
     padding: 5rem 0;
@@ -424,8 +423,8 @@ font-weight: 500;}
     }
 }
 
-.Inter{
-  height: fit-content;
+.Inter {
+    height: fit-content;
 }
 
 .text-white {
