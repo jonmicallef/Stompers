@@ -655,6 +655,13 @@ display: block;
   z-index: 1;
   margin-bottom: 2rem;
 }
+
+.hero-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .hero-box {
   position: relative;
   z-index: 1;
@@ -662,9 +669,8 @@ display: block;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  margin: auto;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Added transition for background */
+  flex: 1;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .hero-box:hover {
@@ -672,7 +678,6 @@ display: block;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
 }
-
 
 .hero-box h1 {
   font-size: 2rem;
@@ -709,6 +714,10 @@ display: block;
 }
 
 @media (max-width: 768px) {
+  .hero-box-container {
+    flex-direction: column;
+  }
+
   .hero-box {
     padding: 1.5rem;
     max-width: 90%;
