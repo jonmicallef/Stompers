@@ -198,6 +198,7 @@ strong {
   letter-spacing: 0.5px;
   white-space: nowrap;
   transition: all 0.3s ease;
+
 }
 
 .custom-btn:hover {
@@ -277,35 +278,52 @@ a:focus {
   opacity: 0.85;
 }
 /* pop up */
-.bigger{
-color: #000;
-font-weight: 500;}
+.bigger {
+  color: #000;
+  font-weight: 500;
+}
+
 .pop-modal-content {
-  border-radius: 20px; /* Increased radius for a rounder look */
+  border-radius: 20px;
   overflow: hidden;
   background: #ffffff;
+  position: relative; /* Ensure close button aligns properly */
 }
 
 .pop-modal-header {
   background-color: #e2223b;
   color: #fff;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom: none;
 }
 
+.pop-modal-header h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .pop-modal-header .close {
   color: #fff;
   opacity: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-.pop-modal-header .close span {
-  font-size: 1.5rem;
+.pop-modal-header .close:hover {
+  color: #ddd;
 }
 
 .pop-modal-body {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .pop-modal-body h1 {
@@ -320,19 +338,19 @@ font-weight: 500;}
   line-height: 1.6;
 }
 
-.pop-modal-body button {
+.pop-modal-body .btn {
   background: #e2223b;
   border: none;
   color: #fff;
   font-size: 1.2rem;
   padding: 0.75rem 1.5rem;
-  border-radius: 30px; /* Increased radius for a rounder button */
+  border-radius: 30px;
   cursor: pointer;
   font-weight: 500;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-.pop-modal-body button:hover {
+.pop-modal-body .btn:hover {
   background: #333;
   color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -340,19 +358,22 @@ font-weight: 500;}
 
 @media (max-width: 768px) {
   .pop-modal-body {
-    padding: 1.5rem;
+      padding: 1.5rem;
   }
 
   .pop-modal-body h1 {
-    font-size: 1.2rem;
+      font-size: 1.2rem;
   }
 
   .pop-modal-body p {
-    font-size: 0.9rem;
+      font-size: 0.9rem;
   }
 
-  .pop-modal-body button {
-    font-size: 1rem;
+  .pop-modal-body .btn {
+      font-size: 1rem;
+  }
+  .rounded-pill{
+    display: block;
   }
 }
 
@@ -469,7 +490,7 @@ padding: 0 7px;
 width: 100%;
  
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navss{
 display: block;
 
@@ -478,7 +499,7 @@ display: block;
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .display-toggle {
       display: block;
   }
@@ -597,7 +618,7 @@ display: block;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .navbar-brand,
   .navbar-collapse,
   .navbarbtn.d-lg-block {
@@ -720,7 +741,6 @@ display: block;
 
   .hero-box {
     padding: 1.5rem;
-    max-width: 90%;
   }
 
   .hero-box h1 {
@@ -984,6 +1004,7 @@ display: block;
   .Mailing-info-long,
   .Mailing-info {
     padding: 1rem;
+      
   }
   
   .class-thumb {
@@ -993,6 +1014,7 @@ display: block;
   .class-thumb2 {
     margin-bottom: 1rem; /* Ensure closer spacing on small screens */
   }
+ 
 }
 
 
@@ -1096,7 +1118,10 @@ display: block;
   }
 
   .Trophy-Mailing-info {
+    width: 95%;
+    justify-content: center;
     padding: 1rem;
+    margin: auto;
   }
 }
 
@@ -1272,7 +1297,7 @@ display: block;
   margin: 2rem 0 1rem;
   font-family: 'staatlichesregular';
 
-  font-size: 1.6em;
+  font-size: 1rem;
   font-weight: var(--font-weight-bold);
 
   letter-spacing: 4px;
@@ -1323,10 +1348,10 @@ display: block;
   }
 
   .bulldog {
-    margin-top: .8rem;
+    margin-top: .1rem;
     width: auto;
-    width: 5.4em;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 
   }
 
@@ -1387,6 +1412,8 @@ display: block;
   .about-working-hours {
     border-left: 0;
     padding: 22px 0 0 0;
+    width: 90%;
+    margin: auto;
   }
 
   .contact h2 span {
@@ -1401,7 +1428,7 @@ display: block;
 
 /* GALLERY */
 .gallery {
-  background-image: url('../images/wp10850754-topographic-phone-wallpapers.png');
+  background-image: url('../images/background-pattern.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1468,7 +1495,7 @@ display: block;
   }
 
   .gallery .gallery-image-wrapper {
-    width: 100%;
+    width: 90%;
     padding-top: 100%;
   }
 
@@ -1476,6 +1503,7 @@ display: block;
     margin-bottom: 0.25rem; /* Reduce bottom margin for smaller screens */
   }
 }
+
 
 
 /* SPONSORS */
