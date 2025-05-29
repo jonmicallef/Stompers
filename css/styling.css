@@ -276,8 +276,7 @@ a:focus {
   width: 100%;
   height: 100%;
   opacity: 0.85;
-}
-/* pop up */
+}/* Modal Styling */
 .bigger {
   color: #000;
   font-weight: 500;
@@ -287,19 +286,19 @@ a:focus {
   border-radius: 20px;
   overflow: hidden;
   background: #ffffff;
-  position: relative; /* Ensure close button aligns properly */
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .pop-modal-header {
   background-color: #e2223b;
   color: #fff;
-  padding: 0.6rem;
+  padding: 0.6rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom: none;
 }
 
 .pop-modal-header h5 {
@@ -315,6 +314,8 @@ a:focus {
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s;
+  background: transparent;
+  border: none;
 }
 
 .pop-modal-header .close:hover {
@@ -326,7 +327,7 @@ a:focus {
   padding: 1.5rem;
 }
 
-.pop-modal-body h1 {
+.pop-modal-body h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -338,64 +339,58 @@ a:focus {
   line-height: 1.6;
 }
 
+/* Button Styling */
 .pop-modal-body .btn {
   background: #e2223b;
-  border: none;
   color: #fff;
-  font-size: 1.2rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 6px 15px rgba(226, 34, 59, 0.3);
 }
 
 .pop-modal-body .btn:hover {
-  background: #333;
-  color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background: #c71c33;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .pop-modal-body {
-      padding: 1.5rem;
+    padding: 1.2rem;
   }
 
-  .pop-modal-body h1 {
-      font-size: 1.2rem;
+  .pop-modal-body h2 {
+    font-size: 1.2rem;
   }
 
   .pop-modal-body p {
-      font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .pop-modal-body .btn {
-      font-size: 1rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
   }
-  .rounded-pill{
+
+  .rounded-pill {
     display: block;
+    width: 100%;
   }
 }
-
-
-
-/*---------------------------------------
-     MODAL              
-  -----------------------------------------*/
-
 .modal-content {
-  padding: 2rem 3rem;
-}
-
-.modal-header,
-.modal-body,
-.modal-footer {
-  border: 0;
-  padding: 0;
-}
-
-.membership-form a {
-  color: var(--primary-color);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95); /* slightly transparent white */
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 
@@ -1569,3 +1564,34 @@ display: block;
   }
 }
 
+#rugbynetwork {
+  position: relative;
+  z-index: 1;
+}
+
+#rugbynetwork .bg-overlay {
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity here */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#rugbynetwork {
+  background-image: url('../images/background-pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+}
+#rugbynetwork .Mailing-info-long {
+  padding: 1.5rem 1.5rem;
+  height: 90%;
+
+}
+
+#rugbynetwork .row {
+  margin-bottom: 0 !important;
+  gap: 0 !important;  
+}

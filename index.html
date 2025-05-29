@@ -2,22 +2,26 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="images/circlestomp.png">
 
-    <title>Stompers Rugby</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Stompers is a rugby club in Malta that welcomes players of all ages and level. Playing in Malta rugby union league, with a rich winning history. Rugby youths, women and men all training in Birkirkara. ">
+    <title>Stompers Rugby Club | Rugby in Malta</title>
+    <meta name="description" content="Join Stompers Rugby Club in Malta. Men's, Women's & Youth teams. Professional rugby training, matches & community. All skill levels welcome. Train in Birkirkara.">
     <meta name="keywords" content="Malta Rugby, Rugby in Malta, maltese rugby, rugby club in malta, Malta Rugby Club, rugby club near malta, rugby near me, kavallieri, kavallieri Rugby, Falcons, falcons rugby, overseas rugby, Stompers Rugby, Birkirkara rugby, rugby team, rugby community, rugby club, rugby players, rugby matches, rugby events, rugby practice">
     <meta name="author" content="Stompers Rugby">
-    <meta property="og:title" content="Stompers Rugby Club | Balzan, Malta" />
-    <meta property="og:description" content="Malta Rugby Club, Rugby in Malta, rugby club near malta, rugby near me, rugby near me, Stompers rugby club" />
-    <meta property="og:type" content="website" />
-    <meta name="geo.region" content="MT" />
-    <meta name="geo.placename" content="Balzan, Malta" />
-    <meta name="geo.position" content="35.8885;14.4506" />
-    <meta name="ICBM" content="35.8885, 14.4506" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stompers Rugby Club | Rugby in Malta">
+    <meta property="og:description" content="Join Stompers Rugby Club in Malta. Men's, Women's & Youth teams. Professional rugby training, matches & community. All skill levels welcome.">
+    
+    <!-- Location -->
+    <meta name="geo.region" content="MT">
+    <meta name="geo.placename" content="Balzan, Malta">
+    <meta name="geo.position" content="35.8885;14.4506">
     
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -73,33 +77,36 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWXTL6WW"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-      <!-- Modal -->
-      <div class="modal fade" id="rugbyCrashCourseModal" tabindex="-1" role="dialog" aria-labelledby="rugbyCrashCourseModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="pop-modal-content rounded-lg">
-                <div class="pop-modal-header border-0">
-                    <h5 class="modal-title p-1" id="rugbyCrashCourseModalLabel">Join Our Rugby Crash Course</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="pop-modal-body text-center">
-                    <h1 class="smaller" data-aos="fade-up" data-aos-delay="500">Join Rugby in Malta</h1>
-                    <p class="bigger" data-aos="fade-up" data-aos-delay="300">
-                        Looking for a new challenge? Join our rugby team to get fit, have fun, and build strong connections. All skill levels welcome—come be part of the action! 🏉
-                        <br>
-                    </p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-eFe6q9Y3VQlcsAySPM4BLzpsDkIb4VKtutoWBXAUpbU6PQ/viewform" class="btn custom-btn bg-color mt-3 mb-3 rounded-pill px-4 py-2">Become a Bulldog</a>
-                </div>
-            </div>
-        </div>
+  <!-- Modal -->
+<div class="modal fade" id="rugbyCrashCourseModal" tabindex="-1" role="dialog" aria-labelledby="rugbyCrashCourseModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content"> <!-- THIS is the missing core wrapper -->
+      <div class="pop-modal-header border-0">
+        <h5 class="modal-title p-1" id="rugbyCrashCourseModalLabel">Join Our Rugby Crash Course</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="pop-modal-body text-center">
+        <h2 class="smaller" data-aos="fade-up" data-aos-delay="500">Join Rugby in Malta</h2>
+        <p class="bigger" data-aos="fade-up" data-aos-delay="300">
+          Looking for a new challenge? Join our rugby team to get fit, have fun, and build strong connections. All skill levels welcome—come be part of the action! 🏉
+        </p>
+        <a href="https://www.instagram.com/stompersrugby" target="_blank" rel="noopener noreferrer" class="btn custom-btn bg-color mt-3 mb-3 rounded-pill px-4 py-2">
+          Become a Bulldog
+        </a>
+      </div>
     </div>
+  </div>
+</div>
+
+
     
       
       
 
         <!-- MENU BAR -->
-        <nav class="navbar navbar-expand-lg fixed-top navs">
+        <nav class="navbar navbar-expand-lg fixed-top navs" aria-label="Main navigation">
          
          
      
@@ -108,7 +115,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
           <div>
           <a class="navbar-brand d-none d-lg-flex align-items-center mr-auto" href="index.html">
-            <img class="bulldog" src="images/circlestomp.png" alt="logo" />
+            <img class="bulldog" src="images/circlestomp.png" alt="Stompers Rugby logo" />
             Stompers
           </a>
         </div>
@@ -117,41 +124,41 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a href="#home" class="nav-link smoothScroll">Home</a>
+                <a href="#home" class="nav-link smoothScroll" aria-label="Go to Home section">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link smoothScroll">About Us</a>
+                <a href="#about" class="nav-link smoothScroll" aria-label="Go to About Us section">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="#TrophyCase" class="nav-link smoothScroll">Trophy Case</a>
+                <a href="#TrophyCase" class="nav-link smoothScroll" aria-label="Go to Trophy Case section">Trophy Case</a>
               </li>
               <li class="nav-item">
-                <a href="#schedule" class="nav-link smoothScroll">Schedules</a>
+                <a href="#schedule" class="nav-link smoothScroll" aria-label="Go to Schedules section">Schedules</a>
               </li>
               <li class="nav-item">
-                <a href="#gallery" class="nav-link smoothScroll">Gallery</a>
+                <a href="#gallery" class="nav-link smoothScroll" aria-label="Go to Gallery section">Gallery</a>
               </li>
               <li class="nav-item">
-                <a href="#sponsors" class="nav-link smoothScroll">Sponsors</a>
+                <a href="#sponsors" class="nav-link smoothScroll" aria-label="Go to Sponsors section">Sponsors</a>
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                <a href="#contact" class="nav-link smoothScroll" aria-label="Go to Contact section">Contact</a>
               </li>
             </ul>
           </div>
           <div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSJ2uCmMwiFD7MooEiC3pc4ij-Y3XlXnTiT5eKHdOOhzPm6g/viewform" class="btn custom-btn bg-color navbarbtn d-none d-lg-block ml-auto" data-aos="fade-up" data-aos-delay="300" target="_blank">Become a Bulldog</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-eFe6q9Y3VQlcsAySPM4BLzpsDkIb4VKtutoWBXAUpbU6PQ/viewform" class="btn custom-btn bg-color navbarbtn d-none d-lg-block ml-auto" data-aos="fade-up" data-aos-delay="300" target="_blank" aria-label="Become a Bulldog - Opens in new tab">Become a Bulldog</a>
           </div>
 
       <div class="navss">  <div class="display-toggle  d-flex w-100 justify-content-between align-items-center">
           <div class="display-toggle d-flex align-items-center">
             <button class="display-toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img class="bulldog" src="images/circlestomp.png" alt="logo">
+              <img class="bulldog" src="images/circlestomp.png" alt="Stompers Rugby logo">
             </button>
           </div>
         <div >
 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-eFe6q9Y3VQlcsAySPM4BLzpsDkIb4VKtutoWBXAUpbU6PQ/viewform" class="display-toggle btn custom-btn bg-color navbarbtn d-lg-none ml-auto" data-aos="fade-up" data-aos-delay="300" target="_blank">Become a Bulldog</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-eFe6q9Y3VQlcsAySPM4BLzpsDkIb4VKtutoWBXAUpbU6PQ/viewform" class="display-toggle btn custom-btn bg-color navbarbtn d-lg-none ml-auto" data-aos="fade-up" data-aos-delay="300" target="_blank" aria-label="Become a Bulldog - Opens in new tab">Become a Bulldog</a>
           </div>
         </div></div>
         </nav>
@@ -167,17 +174,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 <div class="hero-box text-left p-4">
                   <h1 class="smaller" data-aos="fade-up" data-aos-delay="500">Join Rugby in Malta</h1>
                   <p class="bigger" data-aos="fade-up" data-aos-delay="300">
-                    Looking for a new challenge? Join our rugby team to get fit, have fun, and build strong connections. All skill levels welcome—come be part of the action! 🏉
-                    <br>
-                    <br>
+                    Already played rugby or looking to get back on the pitch? Stompers offers well structured development, and a strong team culture for players ready to take things to the next level.
 
-                    Men and Women Senior squads                    
-                    <br>
-                    <br>
+<br><br>At Stompers, we push each other to improve, compete hard, and support one another—on and off the field.
+<br><br>
                     Fill in our form or contact us through facebook
                     <br>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-eFe6q9Y3VQlcsAySPM4BLzpsDkIb4VKtutoWBXAUpbU6PQ/viewform" target="_blank">
-                      <button class="btn custom-btn mt-2 rounded" data-aos="fade-up" data-aos-delay="700">Sign Up here</button>
+                      <button class="btn custom-btn mt-2 rounded" id="signUpButton" data-aos="fade-up" data-aos-delay="700">Sign Up here</button>
                     </a>
                   </p>
                 </div>
@@ -190,6 +194,20 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     
                     <br> <br>At Stompers, we are passionate about nurturing young talent and fostering a love for the game in a safe and supportive environment.
                    <br> <a href="https://docs.google.com/forms/d/e/1FAIpQLSej0tvl6Zovz34T_taAQP27NRv8ZFQVlsfrUugBMeIrnF_6_A/viewform" target="_blank">
+                      <button class="btn custom-btn mt-2 rounded" data-aos="fade-up" data-aos-delay="700">Sign Up here</button>
+                    </a>
+                  </p>
+                </div>
+                
+
+
+
+                <div class="hero-box text-left p-4">
+                  <h1 class="smaller" data-aos="fade-up" data-aos-delay="500">Beginners Course</h1>
+                  <p class="bigger" data-aos="fade-up" data-aos-delay="300">
+                    Looking for a new challenge or way to stay active? Our Beginners Rugby Program is a great way to get fit, meet new people, and learn the basics of the game in a fun and supportive environment.
+
+<br><br>At Stompers, we welcome all experience levels and focus on building confidence, skills, and a strong team spirit from day one. <br> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSJ2uCmMwiFD7MooEiC3pc4ij-Y3XlXnTiT5eKHdOOhzPm6g/viewform" target="_blank">
                       <button class="btn custom-btn mt-2 rounded" data-aos="fade-up" data-aos-delay="700">Sign Up here</button>
                     </a>
                   </p>
@@ -318,7 +336,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-lg-12 col-12 text-center mb-4">
-              <h1 data-aos="fade-up" data-aos-delay="200" class="text-white">Malta Rugby Trophy Case</h1>
+              <h2 data-aos="fade-up" data-aos-delay="200" class="text-white">Malta Rugby Trophy Case</h2>
           </div>
       </div>
       <div class="row row-equal">
@@ -416,7 +434,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                     <strong>Women Training</strong>
                                     <span>6:45 pm - 8:30pm</span>
                                 </td>
-                                    
                                 <td>
                                     <strong>Men Training</strong>
                                     <span>8:00 pm - 9:30pm</span>
@@ -427,136 +444,41 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 </td>
                                 <td>
                                     <strong>Game Day</strong>
-                                    <span> <a href="https://docs.google.com/document/d/1CYXEslQ6wZMSQJZxA_VrvBcMlbglidh5MjRAV23dODk/edit?usp=sharing">Click Here for Fixtures </a> </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <strong>Women Training</strong>
-                                    <span>6:45 pm - 8:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Men Training</strong>
-                                    <span>8:00 pm - 9:30pm</span>
-
-                                </td>
-                                <td>
-                                    <strong>Youth Training</strong>
-                                    <span>4:00 pm - 5:30pm</span>
-                                    <strong>Women Training</strong>
-                                    <span>6:45 pm - 8:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Men Training</strong>
-                                    <span>8:00 pm - 9:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Youth Training</strong>
-                                    <span>4:30 pm - 6:00pm</span>
-                                </td>
-                                <td>
-                                    <strong>Game Day</strong>
-                                    <span> <a href="https://docs.google.com/document/d/1CYXEslQ6wZMSQJZxA_VrvBcMlbglidh5MjRAV23dODk/edit?usp=sharing">Click Here for Fixtures </a> </span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <strong>Women Training</strong>
-                                    <span>6:45 pm - 8:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Men Training</strong>
-                                    <span>8:00 pm - 9:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Youth Training</strong>
-                                    <span>4:00 pm - 5:30pm</span>
-                                    <strong>Women Training</strong>
-                                    <span>6:45 pm - 8:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Men Training</strong>
-                                    <span>8:00 pm - 9:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Youth Training</strong>
-                                    <span>4:30 pm - 6:00pm</span>
-                                </td>
-                                <td> <strong>Game Day</strong>
-                                    <span> <a href="https://docs.google.com/document/d/1CYXEslQ6wZMSQJZxA_VrvBcMlbglidh5MjRAV23dODk/edit?usp=sharing">Click Here for Fixtures </a> </span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td>
-                                    <strong>Women Training</strong>
-                                    <span>6:45 pm - 8:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Men Training</strong>
-                                    <span>8:00 pm - 9:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Youth Training</strong>
-                                    <span>4:00 pm - 5:30pm</span>
-                                    <strong>Women Training</strong>
-                                    <span>6:45 pm - 8:30pm</span>
-
-                                </td>
-                                <td>
-                                    <strong>Men Training</strong>
-                                    <span>8:00 pm - 9:30pm</span>
-                                </td>
-                                <td>
-                                    <strong>Youth Training</strong>
-                                    <span>4:30 pm - 6:00pm</span>
-                                </td>
-                                <td>
-                                    <strong>Game Day</strong>
-                                    <span> <a href="https://docs.google.com/document/d/1CYXEslQ6wZMSQJZxA_VrvBcMlbglidh5MjRAV23dODk/edit?usp=sharing">Click Here for Fixtures </a> </span>
+                                    <span> <a href="https://www.instagram.com/mrc_maltarugbychampionship/">Click Here for Fixtures </a> </span>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div>  
                 <div class="mobileDiv col-lg-12 py-5 col-md-12 col-12">
                     <div class="container">
                         <div class="row">
-            
                             <div class="col-lg-12 col-12 text-center">
-                    <p class="mt-5">Tuesday & Thursday</p>
-                   <p class="text-white">
-                    <strong>Men Training</strong>
+                                <p class="mt-5">Tuesday & Thursday</p>
+                                <p class="text-white">
+                                    <strong>Men Training</strong>
                                     <span>8:00 pm - 9:30pm</span>
-                                </p >
+                                </p>
                                 <p class="mt-5">Monday & Wednesday</p>
                                 <p class="text-white">
-                                 <strong>Women Training</strong>
-                                                 <span>6:45 pm - 8:30pm</span>
-                                             </p >
-
-                                             <p class="mt-5">Wednesday & Friday</p>
-                                             <p class="text-white">
-                                              <strong>Youth Training</strong>
-                                                              <span>4:00 pm - 5:30pm & 4:30pm - 6:00pm</span>
-                                                          </p >
-                    <p class="mt-5">Saturday</p>
-                    <p class="text-white">
-                        <strong>Game Day</strong>
-                                        <span>12:00am - 1:30pm <br> or <br> 1:30pm - 3:00pm </span><br>
-                                        <a href="https://docs.google.com/document/d/1CYXEslQ6wZMSQJZxA_VrvBcMlbglidh5MjRAV23dODk/edit?usp=sharing">Click Here for Fixtures </a>
-
-                                        <p class="viewerText" >Come Watch a Game its free and Beers are always cold</p>
-                                    </p >
-                </div>
-            </div>
-
-
-                </div>
+                                    <strong>Women Training</strong>
+                                    <span>6:45 pm - 8:30pm</span>
+                                </p>
+                                <p class="mt-5">Wednesday & Friday</p>
+                                <p class="text-white">
+                                    <strong>Youth Training</strong>
+                                    <span>4:00 pm - 5:30pm & 4:30pm - 6:00pm</span>
+                                </p>
+                                <p class="mt-5">Saturday</p>
+                                <p class="text-white">
+                                    <strong>Game Day</strong>
+                                    <span>12:00am - 1:30pm <br> or <br> 1:30pm - 3:00pm </span><br>
+                                    <a href="https://docs.google.com/document/d/1CYXEslQ6wZMSQJZxA_VrvBcMlbglidh5MjRAV23dODk/edit?usp=sharing">Click Here for Fixtures </a>
+                                    <p class="viewerText">Come Watch a Game its free and Beers are always cold</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-12 col-12 text-center">
                     <p class="text-white" data-aos="fade-up">Message Us To Join <br> Facebook or Instagram</p>
@@ -580,51 +502,51 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <!-- First Row -->
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="101">
-                  <img src="images/images (1).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 1">
+                  <img src="images/team-action-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby team in action">
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="201">
-                  <img src="images/images (2).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 2">
+                  <img src="images/match-highlights-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby match highlights">
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="300">
-                  <img src="images/images (3).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 3">
+                  <img src="images/team-celebration-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby team celebration">
               </div>
           </div>
 
           <!-- Second Row -->
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="101">
-                  <img src="images/images (4).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 4">
+                  <img src="images/training-session-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby training session">
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="201">
-                  <img src="images/images (5).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 5">
+                  <img src="images/team-photo-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby team photo">
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="300">
-                  <img src="images/images (6).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 6">
+                  <img src="images/match-action-2.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby match action">
               </div>
           </div>
 
           <!-- Third Row -->
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="101">
-                  <img src="images/images (7).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 7">
+                  <img src="images/team-huddle-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby team huddle">
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="201">
-                  <img src="images/images (8).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 8">
+                  <img src="images/player-action-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby player in action">
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-3">
               <div class="gallery-image-wrapper" data-aos="fade-up" data-aos-delay="300">
-                  <img src="images/images (9).jpg" class="img-fluid rounded shadow" alt="Gallery Photo 9">
+                  <img src="images/victory-celebration-1.jpg" class="img-fluid rounded shadow" alt="Stompers Rugby team victory celebration">
               </div>
           </div>
       </div>
@@ -648,56 +570,105 @@ Click the logo to check them out
         <div class="col-lg-3 col-md-4 col-6 mb-3">
           <div class="sponsor-logo">
             <a href="https://www.farsons.com/carlsberg" target="_blank">
-              <img src="images/Artboard 2.png" class="img-fluid rounded" alt="Sponsor 1">
+              <img src="images/sponsor-carlsberg.png" class="img-fluid rounded" alt="Carlsberg - Stompers Rugby sponsor">
             </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-6 mb-3">
           <div class="sponsor-logo">
             <a href="https://www.facebook.com/Bilvenltd/" target="_blank">
-              <img src="images/Artboard 3.png" class="img-fluid rounded" alt="Sponsor 2">
+              <img src="images/sponsor-bilven.png" class="img-fluid rounded" alt="Bilven - Stompers Rugby sponsor">
             </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-6 mb-3">
           <div class="sponsor-logo">
             <a href="https://matchingvisions.com" target="_blank">
-              <img src="images/Artboard 4.png" class="img-fluid rounded" alt="Sponsor 3">
+              <img src="images/sponsor-matching-visions.png" class="img-fluid rounded" alt="Matching Visions - Stompers Rugby sponsor">
             </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-6 mb-3">
           <div class="sponsor-logo">
             <a href="https://www.facebook.com/tonysbarsliema/" target="_blank">
-              <img src="images/Artboard 5.png" class="img-fluid rounded" alt="Sponsor 4">
+              <img src="images/sponsor-tonys-bar.png" class="img-fluid rounded" alt="Tony's Bar - Stompers Rugby sponsor">
             </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-6 mb-3">
           <div class="sponsor-logo">
             <a href="https://www.karrotandko.com" target="_blank">
-              <img src="images/Artboard 6.png" class="img-fluid rounded" alt="Sponsor 5">
+              <img src="images/sponsor-karrot-ko.png" class="img-fluid rounded" alt="Karrot Ko - Stompers Rugby sponsor">
             </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-6 mb-3">
           <div class="sponsor-logo">
-            <a href="https://veracloud.eu" target="_blank">
-              <img src="images/Artboard 8.png" class="img-fluid rounded" alt="Sponsor 7">
+            <a href="https://bulldoggmt.com" target="_blank">
+              <img src="images/sponsor-bulldog.png" class="img-fluid rounded" alt="Bulldog - Stompers Rugby sponsor">
             </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-6 mb-3">
             <div class="sponsor-logo">
-              <a href="https://bulldoggmt.com" target="_blank">
-                <img src="images/Artboard 7.png" class="img-fluid rounded" alt="Sponsor 6">
+              <a href="https://veracloud.eu" target="_blank">
+                <img src="images/sponsor-vera-cloud.png" class="img-fluid rounded" alt="Vera Cloud - Stompers Rugby sponsor">
               </a>
             </div>
           </div>
       </div>
     </div>
   </section>
+
+  <section class="about section" id="rugbynetwork">
+    <div class="container mob">
+      <div class="row mb-0">
+        <div class="col-lg-12 col-12 text-center mb-5">
+          <h2 class="display-3" data-aos="fade-up" data-aos-delay="200">Rugby in Malta & Beyond</h2>
+        </div>
   
+        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+          <div class="Mailing-info-long">
+            <h3 class="mb-1 mt-2">Malta Rugby Football Union (MRFU)</h3>
+            <p class="mt-3">
+              The MRFU is the official governing body of rugby in Malta. It oversees the national team and organizes local leagues and tournaments. Discover more:
+              <br>
+              <a href="https://rugbymalta.com" target="_blank">rugbymalta.com</a><br>
+              <a href="https://maltacvs.org/voluntary/malta-rugby-football-union/" target="_blank">MRFU on MaltaCVS</a>
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+          <div class="Mailing-info-long">
+            <h3 class="mb-1 mt-2">Rugby Clubs in Malta</h3>
+            <p class="mt-3">
+              Meet our fellow clubs who compete alongside us in Malta's rugby scene:
+              <br>
+              <a href="https://overseasrufc.com/category/mrfu/" target="_blank">Overseas Rugby Club</a><br>
+              <a href="https://kavallierirugby.com" target="_blank">Kavallieri Rugby Club</a><br>
+              <a href="https://wolves.mt" target="_blank">Wolves RFC</a><br>
+              <a href="https://falconsrfc.weebly.com" target="_blank">Falcons RFC</a>
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-lg-12 col-md-12 col-12" data-aos="fade-up" data-aos-delay="800">
+          <div class="Mailing-info-long">
+            <h3 class="mb-1 mt-2">Global Rugby Bodies</h3>
+            <p class="mt-3">
+              Rugby is more than a game—it's a global community. Explore the international side of the sport:
+              <br>
+              <a href="https://www.world.rugby/?lang=en" target="_blank">World Rugby</a> – The international governing body.<br>
+              <a href="https://www.rugbyeurope.eu" target="_blank">Rugby Europe</a> – Organizing competitions across the continent.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
 <!-- CONTACT -->
 <section class="contact section" id="contact">
     <div class="container">
@@ -708,19 +679,19 @@ Click the logo to check them out
           <div class="contact-info" data-aos="fade-up" data-aos-delay="800">
             <p>
               <i class="fa fa-facebook mr-2"></i>
-              <a href="">Send Us a Message!</a>
+              <a href="https://www.facebook.com/stompersrugby" target="_blank" aria-label="Contact Stompers Rugby on Facebook - Opens in new tab">Send Us a Message!</a>
             </p>
             <p>
               <i class="fa fa-instagram mr-2"></i>
-              <a href="https://www.instagram.com/stompersrugby/?hl=en">Send Us a Message!</a>
+              <a href="https://www.instagram.com/stompersrugby/?hl=en" target="_blank" aria-label="Contact Stompers Rugby on Instagram - Opens in new tab">Send Us a Message!</a>
             </p>
             <p>
               <i class="fa fa-envelope mr-2"></i>
-              <a href="mailto:info@stompersrugby.com">Or email us on: info@stompersrugby.com</a>
+              <a href="mailto:info@stompersrugby.com" aria-label="Email Stompers Rugby">Or email us on: info@stompersrugby.com</a>
             </p>
           </div>
           <img width="250" height="250" data-aos="fade-up" data-aos-delay="800" class="contact-image mt-4"
-            src="/images/Stompers-Men.png" alt="logo">
+            src="/images/Stompers-Men.png" alt="Stompers Rugby Men's Team">
         </div>
   
         <div class="col-lg-7 col-md-6 col-12 mt-4 mt-md-0">
@@ -740,6 +711,14 @@ Click the logo to check them out
     </div>
   </section>
   
+
+
+
+ 
+  
+
+
+
   <!-- FOOTER -->
 <footer class="site-footer">
     <div class="container">
@@ -750,58 +729,19 @@ Click the logo to check them out
             <div class="d-flex justify-content-center mx-auto col-lg-7 col-md-7 col-12">
                 <p class="mr-4">
                     <i class="fa fa-instagram mr-1"></i>
-                    <a href="https://www.instagram.com/stompersrugby/?hl=en">Instagram</a>
+                    <a href="https://www.instagram.com/stompersrugby/?hl=en" target="_blank" aria-label="Visit Stompers Rugby on Instagram - Opens in new tab">Instagram</a>
                 </p>
                 <p class="mr-4">
                     <i class="fa fa-facebook mr-1"></i>
-                    <a href="https://www.facebook.com/stompersrugby">Facebook</a>
+                    <a href="https://www.facebook.com/stompersrugby" target="_blank" aria-label="Visit Stompers Rugby on Facebook - Opens in new tab">Facebook</a>
                 </p>
             </div>
         </div>
-        <!-- <div class="row mt-4">
-            <div class="col-12 text-center">
-                <div class="sponsors">
-                    <img class="sponsor-logo desktop" src="images/sponsorsBlack.PNG" alt="sponsors">
-                    <img class="sponsor-logo mobile" src="images/SponsorsBlackMobile.PNG" alt="sponsors">             
-                </div>
-            </div>
-        </div>
-    </div> -->
+    </div>
 </footer>
 
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-
-            <div class="modal-content">
-                <div class="modal-header">
-
-                    <h3 class="text-black modal-title p-1" id="membershipFormLabel">Contact Us to Join</h3>
-
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form class="membership-form webform" role="form">
-                        <h6 class="mb-4 text-black" data-aos="fade-up">Message Us on <a href="https://www.facebook.com/stompersrugby"> facebook</a> or <a
-                                href="https://www.instagram.com/stompersrugby/?hl=en">Instagram</a> or email <b> info@stompersrugby.com </b></h6>
-
-        
-
-         
-                    </form>
-                </div>
-
-                <div class="modal-footer"></div>
-
-            </div>
-        </div>
-    </div>
 
 
     
