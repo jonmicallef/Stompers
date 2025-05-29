@@ -285,7 +285,7 @@ a:focus {
 .pop-modal-content {
   border-radius: 20px;
   overflow: hidden;
-  background: #ffffff;
+  background: transparent;
   position: relative;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
@@ -389,7 +389,7 @@ a:focus {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.95); /* slightly transparent white */
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
   position: relative;
 }
 
@@ -1241,9 +1241,9 @@ display: block;
   
   .site-footer .sponsor-logo.mobile {
     display: block;
-  } */
+  }
   
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
     .site-footer .sponsor-logo.desktop {
       display: block;
     }
@@ -1393,9 +1393,7 @@ display: block;
     display: block;
   }
 
-  .modal-content {
-    padding: 2rem;
-  }
+  
 }
 
 @media screen and (max-width: 767px) {
